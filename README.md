@@ -20,8 +20,10 @@ Note : the size of the pool after creation is not necessary the size requested.
 struct Uniform {
   float color;
 }
+
 vk::DeviceSize poolSize = sizeof(Uniform);
-vkm::BufferPool pool(allocator, { poolSize, vk::BufferUsageFlagBits::eUniformBuffer }, vk::MemoryPropertyFlagBits::eHostVisible |        vk::MemoryPropertyFlagBits::eHostCoherent);
+
+vkm::BufferPool pool(allocator, { poolSize, vk::BufferUsageFlagBits::eUniformBuffer }, vk::MemoryPropertyFlagBits::eHostVisible |  vk::MemoryPropertyFlagBits::eHostCoherent);
 ```
 At the end of its use, you can simply *destroy* the pool.
 ```c++
