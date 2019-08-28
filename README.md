@@ -38,4 +38,5 @@ vkm::Buffer buffer(pool, { sizeof(Uniform), vk::SharingMode::eExclusive, 0, null
 //using buffer
 
 buffer.destroy();
+//pool.destroy();
 ```
