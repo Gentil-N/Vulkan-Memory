@@ -79,7 +79,7 @@ vk::Buffer buffers[] = { static_cast<vk::Buffer>(modelData) };
 //...
 
 vkm::Buffer uniformData;
-vk::DescriptorBufferInfo bufferInfo = { uniformData, 0, sizeof(float)};
+vk::DescriptorBufferInfo bufferInfo = { uniformData, 0, sizeof(float) };
 ```
 
 ## Pool informations
