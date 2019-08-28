@@ -89,7 +89,7 @@ std::string infos = pool.getInformations();
 std::cout << infos << std::endl;
 ```
 And see something like this :
-```c++
+```
 VulkanMemory Pool (num blocks = 3) :
 -Block -> offset : 0, size : 58, reserved
 -Block -> offset : 58, size : 2, free
