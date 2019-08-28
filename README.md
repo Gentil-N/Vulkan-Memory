@@ -49,6 +49,7 @@ Uniform uniform = { 0.4f };
 pool.singleCopy(buffer, &uniform, 0, sizeof(Uniform));
 ```
 Note : offset is relative to the buffer.
+
 For more complex use :
 ```c++
 struct Color {
