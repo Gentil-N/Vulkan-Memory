@@ -63,7 +63,7 @@ struct LightPos {
 color = { 0.2f, 0.8f, 0.7f };
 lightPos = { 20.0f, 4.0f, -7.0f };
 
-buffer.create(pool, { sizeof(Color) + sizeof(LightPos), vk::SharingMode::eExclusive, 0, nullptr });
+buffer.create(pool, { sizeof(Color) + sizeof(LightPos) });
 
 void* colorData = pool.map(buffer, 0, sizeof(Color));
 memcpy(colorData, &color, sizeof(Color));
