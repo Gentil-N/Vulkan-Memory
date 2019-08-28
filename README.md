@@ -50,7 +50,7 @@ pool.singleCopy(buffer, &uniform, 0, sizeof(Uniform));
 ```
 Note : offset is relative to the buffer.
 
-For more complex use :
+For more complex uses :
 ```c++
 struct Color {
   float r = 0.0f, g = 0.0f, b = 0.0f;
