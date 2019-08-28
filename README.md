@@ -1,7 +1,7 @@
 # Vulkan-Memory
 A little memory manager for Vulkan API, written in c++.
 
-# A Simple Example
+# A simple example
 ## The Allocator
 Firstly, create a new *Allocator* object :
 ```c++
