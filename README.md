@@ -71,7 +71,7 @@ void* lightData = pool.map(buffer, sizeof(Color), sizeof(LightPos));
 memcpy(lightData, &lightData, sizeof(LightPos));
 pool.unmap();
 ```
-Finally, to access the *vk::Buffer*, you can cast *vkm::Buffer* objects or do nothing !
+Finally, to access to the *vk::Buffer*, you can cast *vkm::Buffer* objects or do nothing !
 ```c++
 vkm::Buffer modelData;
 vk::Buffer buffers[] = { static_cast<vk::Buffer>(modelData) };
