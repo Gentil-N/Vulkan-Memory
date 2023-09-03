@@ -1,2 +1,2 @@
 # Vulkan-Memory
-A little memory manager for Vulkan API, written in c++.
+A small memory manager for Vulkan API, written in c++.
